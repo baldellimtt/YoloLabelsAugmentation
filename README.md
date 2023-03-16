@@ -24,4 +24,4 @@ after running the script you will find in output directory images and annotation
 ![alt text](https://user-images.githubusercontent.com/62099945/225583572-98e97bc5-ba4d-4680-994b-ed09edc85d54.jpg)
 
 All images are slightly blurred and have randomly changed contrast, but you can simply implement your own augmentations.
-If images inside dataset directory have no txt annotations images will be considered background and augmented without annotations.
+If images inside dataset directory have no txt annotations will be considered background and augmented without annotations.
