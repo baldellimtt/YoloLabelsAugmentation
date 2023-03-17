@@ -1,0 +1,57 @@
+# File eseguibili e compilati
+bin/
+obj/
+*.zip
+*.lnk
+
+#Escludo i video
+*mp4
+
+#Escludo anche la cartella con le immagini
+dataset
+*.png
+*.jpg
+YoloAugmentation/output
+
+
+#Escludo la cartella runs che viene generata dal modello
+runs
+
+# Impostazioni utente di Visual Studio
+*.suo
+*.user
+src/.vs/
+
+# JetBrains Rider
+src/.idea/
+
+# File temporanei e di backup
+*~
+Thumbs.db
+*.bak
+*.back.aip
+*.psess
+*.vsp
+*.log
+*.binlog
+
+# File generati da programmi esterni
+_ReSharper*
+src/setup-files/
+src/setup-cache/
+src/*SetupFiles/
+
+# Alcune directory standard da ignorare
+Immagini/
+Release*
+Eseguibile/
+Setup/
+
+# Ignore NuGet Packages
+*.nupkg
+# Ignore the packages folder
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
