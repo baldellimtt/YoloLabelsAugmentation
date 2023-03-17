@@ -54,6 +54,14 @@ for filename in os.listdir(input_dir):
             with open(bb_image_file, "r") as file_r:
                 data = file_r.readlines()
 
+            #change randomly contrast of image
+            contrast = np.random.uniform(0.7, 1.3)
+            img_flipped = np.clip(img_flipped * contrast, 0, 255).astype(np.uint8)
+
+            #slighly blur image
+            blur_radius = 1
+            img_flipped = cv2.GaussianBlur(img_flipped, (blur_radius, blur_radius), 0)
+
             # bbox = [class_index, x_center, y_center, width, height]
             # we update x_center if flip = 1 (horizontal)
             # we update y_center if flip = 0 (vertical) 
