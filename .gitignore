@@ -9,9 +9,9 @@ obj/
 
 #Escludo anche la cartella con le immagini
 dataset
+output
 *.png
 *.jpg
-YoloAugmentation/output
 
 
 #Escludo la cartella runs che viene generata dal modello
