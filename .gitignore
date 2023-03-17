@@ -8,8 +8,8 @@ obj/
 *mp4
 
 #Escludo anche la cartella con le immagini
-dataset
-output
+YoloAugmentation/src/dataset
+YoloAugmentation/output
 *.png
 *.jpg
 
