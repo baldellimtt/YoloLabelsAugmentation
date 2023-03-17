@@ -7,6 +7,8 @@ from src.yolo import yoloRotatebbox,cvFormattoYolo
 dir_path = "dataset"
 output = "output/"
 
+os.mkdir(output)
+
 # rotation degree angles
 angles = [90, 180, 270]
 
